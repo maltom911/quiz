@@ -1,0 +1,81 @@
+.button {
+    padding: 2rem 0rem;
+    font-size: 3rem;
+    border-radius: 5px;
+    font-family: 'Marck Script', cursive;
+    border: none;
+    transition: background-color .6s;
+
+    //1216px
+    @media (max-width: 76em) {
+        & {
+            font-size: 2.6rem;
+        }
+    }
+
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    &__main {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+
+        &_display {
+            display: none;
+        }
+
+        &:hover,
+        &:disabled {
+            background-color: transparent;
+            color: black;
+            border-color: black;
+        }
+    }
+
+
+    &_blue,
+    &_blue:disabled {
+        background-color: $darkblue;
+    }
+
+    &_blue:hover {
+        background-color: $blue;
+    }
+
+    &_yellow,
+    &_yellow:disabled {
+        background-color: $darkyellow;
+    }
+
+    &_yellow:hover {
+        background-color: $yellow;
+    }
+
+    &_red,
+    &_red:disabled {
+        background-color: $darkred;
+    }
+
+    &_red:hover {
+        background-color: $red;
+    }
+
+    &_orange,
+    &_orange:disabled {
+        background-color: $darkorange;
+    }
+
+    &_orange:hover {
+        background-color: $orange;
+
+    }
+}
